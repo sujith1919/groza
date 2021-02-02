@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags-->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+  <title>iCloud Mail</title>
+  <!-- Bootstrap core CSS-->
+  <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/css/custom.css" rel="stylesheet">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug-->
+  <link href="/static/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="/static/jumbotron.css" rel="stylesheet">
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines!-->
+  <!--if lt IE 9script(src='/js/ie8-responsive-file-warning.js')
+    -->
+  <script src="/static/js/ie-emulation-modes-warning.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+  <!--
+    if lt IE 9
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    -->
+</head>
+
+<body>
+  <form action="/getusercount" method="post" role="form">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">iCloud Mail Users</a><a class="navbar-brand" href="/reportoutage">Report Outage</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar"></div>
+        <!-- /.navbar-collapse-->
+      </div>
+    </nav>
+    <!-- Main jumbotron for a primary marketing message or call to action-->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Lifeboat Search</h3>
+              </div>
+              <div class="panel-body">
+                <div class="col-lg-10">
+                  <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search text here" name="advanced_search_text"><span class="input-group-btn">
+                      <button class="btn btn-primary" id="adv_search" type="submit" name="dc_button" value="custom">Search</button></span>
+                  </div>
+                  <!-- input-group-->
+                </div>
+                <!-- col-lg-6-->
+              </div>
+              <!-- panel-body-->
+            </div>
+            <!-- panel-->
+            <!-- lol one more panel-->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> DC </h3>
+              </div>
+              <div class="panel-body">
+                <div class="container">
+                  <button class="btn btn-success" type="submit" name="dc_button" value="ST">ST</button>
+                  <button class="btn btn-success" type="submit" name="dc_button" value="NK">NK</button>
+                  <button class="btn btn-success" type="submit" name="dc_button" value="MR">MR</button>
+                  <button class="btn btn-success" type="submit" name="dc_button" value="PV">PV</button>
+                  <button class="btn btn-success" type="submit" name="dc_button" value="MS">MS</button>
+                </div>
+              </div>
+              <!-- panel-body-->
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Partiton </h3>
+              </div>
+              <div class="panel-body">
+                <div class="container">
+                  <button class="btn btn-dark" type=submit name=dc_button value=P03>P03 </button>
+                  <button class="btn btn-light" type=submit name=dc_button value=P04>P04</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P05>P05</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P06>P06</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P07>P07</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P08>P08</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P09>P09</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P10>P10</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P11>P11</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P12>P12</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P13>P13</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P14>P14</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P15>P15</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P16>P16</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P17>P17</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P18>P18</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P19>P19</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P20>P20</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P21>P21</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P22>P22</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P23>P23</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P24>P24</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P25>P25</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P26>P26</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P27>P27</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P28>P28</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P29>P29</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P30>P30</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P31>P31</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P32>P32</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P33>P33</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P34>P34</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P35>P35</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P36>P36</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P37>P37</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P38>P38</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P39>P39</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P40>P40</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P41>P41</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P42>P42</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P43>P43</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P44>P44</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P45>P45</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P46>P46</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P47>P47</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P48>P48</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P49>P49</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P50>P50</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P51>P51</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P52>P52</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P53>P53</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P54>P54</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P55>P55</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P56>P56</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P57>P57</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P58>P58</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P59>P59</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P60>P60</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P61>P61</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P62>P62</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P63>P63</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P64>P64</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P65>P65</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P66>P66</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P67>P67</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P68>P68</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P69>P69</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P70>P70</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P71>P71</button>
+                  <button class="btn btn-primary" type=submit name=dc_button value=P72>P72</button>
+                </div>
+              </div>
+              <!-- panel-body-->
+            </div>
+            <!-- panel-->
+            <!-- lol one more panel-->
+            <!-- panel-->
+          </div>
+          <!-- col-lg-7-->
+          <!-- NEXT PANEL & Container-->
+          <div class="col-lg-5">
+            <div class="panel panel-danger">
+              <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Search help</h3>
+              </div>
+              <div class="panel-body">
+                <table class="table-responsive">
+                  <tr>
+                    <td>
+                      <p class="text-right" style="font-size:14px;"><code><b>ms49001</b></code></p>
+                    </td>
+                    <p></p>
+                    <td>
+                      <p style="font-size:14px;">: Example Mail Store.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="text-right" style="font-size:14px;"><code><b>ms4551</b></code></p>
+                    </td>
+                    <p></p>
+                    <p></p>
+                    <td>
+                      <p style="font-size:14px;">: Example Solaris Mail Pod.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="text-right" style="font-size:14px;"><code><b>pod4901/pod7201a</b></code></p>
+                    </td>
+                    <p></p>
+                    <td>
+                      <p style="font-size:14px;">: Example Docker MailPod.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="text-right" style="font-size:14px;"><code><b>p21/21</b></code></p>
+                    </td>
+                    <p></p>
+                    <td>
+                      <p style="font-size:14px;">: example partition. </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="text-right" style="font-size:14px;"><code><b>st11</b></code></p>
+                    </td>
+                    <p></p>
+                    <td>
+                      <p style="font-size:14px;">: Example Data Hall.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="text-right" style="font-size:14px;"><code><b>st</b></code></p>
+                    </td>
+                    <p></p>
+                    <p></p>
+                    <td>
+                      <p style="font-size:14px;">: Example Data Center.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="text-right" style="font-size:14px;"><code><b>all</b></code></p>
+                    </td>
+                    <p></p>
+                    <td>
+                      <p style="font-size:14px;">: Total iCloud Mail Users.</p>
+                  <tr></tr>
+                  </td>
+                  <td>
+                    <p class="text-right" style="font-size:14px;"><code><b>nk,pv,mr</b></code></p>
+                  </td>
+                  <p></p>
+                  <td>
+                    <p style="font-size:14px;">: Use Comma for Multiple Items.</p>
+                  </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- panel-body-->
+            </div>
+            <!-- panel-->
+          </div>
+          <!-- col-lg-7-->
+        </div>
+        <!-- row-->
+      </div>
+      <!-- container-->
+    </div>
+    <!-- jumbotron-->
+  </form>
+  <!--
+    Bootstrap core JavaScript
+    ==================================================
+    -->
+  <!-- Placed at the end of the document so the pages load faster-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="/static/js/vendor/jquery.min.js"><\\\/script>')
+  </script>
+  <script src="/static/dist/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug-->
+  <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
